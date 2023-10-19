@@ -1,0 +1,24 @@
+<h1>Custom Directives</h1>
+<p appExample="blue" *appCustomif="true">example works!</p>
+<ul>
+  <li *appCustomfor="names;let name;let i = index">{{name}} - {{i}}</li>
+</ul>
+<hr>
+<h1>Pipe</h1>
+<p>{{name | uppercase}}</p> <!--Uppercase Pipe--> 
+<p>{{name | slice:5:8}}</p> <!--Slice Pipe (start:end)--> 
+<p>{{name | json}}</p> <!--JSON Pipe-->
+<p>{{5.678 | number:'1.2-3'}}</p> <!--Number Pipe (minIntegerDigits.minFractionDigits-maxFractionDigits)-->
+<p>{{5.678 | percent}}</p> <!--Percent Pipe-->
+<p>{{0.25 | currency:'USD'}}</p> <!--Currency Pipe-->
+<p>{{date | date:'short'}}</p> <!--Date Pipe-->
+<p>{{date | date:'shortDate'}}</p> <!--Date Pipe-->
+<p>{{name | example:0:5}}</p> <!--Custom Pipe (start:end)-->
+<hr>
+<h1>Input Output Communication</h1>
+<h2>Parent To Child</h2>
+<app-parent></app-parent>
+<h2>Child To Parent</h2>
+<app-parent-2></app-parent-2>
+<h2>Child To Child</h2>
+<app-ctc-parent></app-ctc-parent>
