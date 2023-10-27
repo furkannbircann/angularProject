@@ -1,0 +1,19 @@
+<h4>Model-Driven Forms</h4>
+<form [formGroup]="frm" (ngSubmit)="onSubmit(frm)" >
+    <input type="text" name="name" placeholder="Name" formControlName="name">
+    <input type="text" name="surname" placeholder="Surname" formControlName="surname">
+    <input type="tel" name="tel" placeholder="Tel" formControlName="tel">
+    <div formGroupName="address">
+        <input type="text" name="country" placeholder="Country" formControlName="country">
+        <input type="text" name="city" placeholder="City" formControlName="city">
+        <input type="text" name="street" placeholder="Street" formControlName="street">
+    </div>
+    <select name="job" id="jobselect" formControlName="job">
+        <option value="0">Teacher</option>
+        <option value="1">Student</option>
+        <option value="2">Software Developer</option>
+        <option value="3">Chef</option>
+    </select>
+    <p>Form Valid : {{frm.valid}}</p>
+    <button type="submit">Send</button>
+</form>

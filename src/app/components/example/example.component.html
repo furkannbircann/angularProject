@@ -1,8 +1,14 @@
-<h1>Custom Directives</h1>
-<p appExample="blue" *appCustomif="true">example works!</p>
-<ul>
-  <li *appCustomfor="names;let name;let i = index">{{name}} - {{i}}</li>
-</ul>
+<h1>Angular Forms</h1>
+<app-model-driven></app-model-driven>
+<app-template-driven></app-template-driven>
+<hr>
+<h1>Input Output Communication</h1>
+<h2>Parent To Child</h2>
+<app-parent></app-parent>
+<h2>Child To Parent</h2>
+<app-parent-2></app-parent-2>
+<h2>Child To Child</h2>
+<app-ctc-parent></app-ctc-parent>
 <hr>
 <h1>Pipe</h1>
 <p>{{name | uppercase}}</p> <!--Uppercase Pipe--> 
@@ -15,10 +21,9 @@
 <p>{{date | date:'shortDate'}}</p> <!--Date Pipe-->
 <p>{{name | example:0:5}}</p> <!--Custom Pipe (start:end)-->
 <hr>
-<h1>Input Output Communication</h1>
-<h2>Parent To Child</h2>
-<app-parent></app-parent>
-<h2>Child To Parent</h2>
-<app-parent-2></app-parent-2>
-<h2>Child To Child</h2>
-<app-ctc-parent></app-ctc-parent>
+<h1>Custom Directives</h1>
+<p appExample="blue" *appCustomif="true">example works!</p>
+<ul>
+  <li *appCustomfor="names;let name;let i = index">{{name}} - {{i}}</li>
+</ul>
+<hr>

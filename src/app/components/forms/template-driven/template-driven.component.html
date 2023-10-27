@@ -1,0 +1,18 @@
+<h4>Template Driven Forms</h4>
+<form #frm="ngForm" (ngSubmit)="onSubmit(frm.value)">
+    <input type="text" name="name" placeholder="Name" ngModel>
+    <input type="text" name="surname" placeholder="Surname" ngModel>
+    <input type="tel" name="tel" placeholder="Tel" ngModel>
+    <div ngModelGroup="address">
+        <input type="text" name="country" placeholder="Country" ngModel>
+        <input type="text" name="city" placeholder="City" ngModel>
+        <input type="text" name="street" placeholder="Street" ngModel>
+    </div>
+    <select name="job" id="jobselect" ngModel>
+        <option value="0">Teacher</option>
+        <option value="1">Student</option>
+        <option value="2">Software Developer</option>
+        <option value="3">Chef</option>
+    </select>
+    <button type="submit">Send</button>
+</form>
