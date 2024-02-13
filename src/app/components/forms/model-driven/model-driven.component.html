@@ -1,5 +1,5 @@
 <h4>Model-Driven Forms</h4>
-<form [formGroup]="frm" (ngSubmit)="onSubmit(frm)" >
+<form [formGroup]="frm" (ngSubmit)="onSubmit(frm)">
     <input type="text" name="name" placeholder="Name" formControlName="name">
     <input type="text" name="surname" placeholder="Surname" formControlName="surname">
     <input type="tel" name="tel" placeholder="Tel" formControlName="tel">
@@ -17,3 +17,7 @@
     <p>Form Valid : {{frm.valid}}</p>
     <button type="submit">Send</button>
 </form>
+<h4>Status</h4>
+<p>Form Touched : {{frm.touched}}</p>
+<p>Name Touched : {{frm.get('name')?.touched}}</p>
+<button (click)="markAsTouched()">MarkAsTouched</button>

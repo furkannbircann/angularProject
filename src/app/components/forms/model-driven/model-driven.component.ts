@@ -26,4 +26,7 @@ export class ModelDrivenComponent implements OnInit {
   onSubmit(data: any) {
     console.log(data.value);
   }
+  markAsTouched(){
+    this.frm.get('name')?.markAsTouched();
+  }
 }
