@@ -20,7 +20,7 @@ export class ExampleDirective implements OnInit {
   ngOnInit(): void {
     this.elementRef.nativeElement.style.backgroundColor = this.appExample; //Change the style of an html element with ElementRef
     this.elementRef.nativeElement.style.cursor = 'pointer';
-    $(this.elementRef.nativeElement).fadeOut(3000).fadeIn(3000); //Change the style of an html element with ElementRef and Jquery
+    //$(this.elementRef.nativeElement).fadeOut(3000).fadeIn(3000); //Change the style of an html element with ElementRef and Jquery
   }
 
   @HostListener('click') //HostListener continuously listens for the html tag that uses the (appExample) directive

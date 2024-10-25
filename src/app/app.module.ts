@@ -18,6 +18,7 @@ import { ExamplePipe } from './pipes/example.pipe';
 import { TemplateDrivenComponent } from './components/forms/template-driven/template-driven.component';
 import { ModelDrivenComponent } from './components/forms/model-driven/model-driven.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CtcParentComponent,
     TemplateDrivenComponent,
     ModelDrivenComponent,
+    LifeCycleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule,ReactiveFormsModule],
   providers: [],
