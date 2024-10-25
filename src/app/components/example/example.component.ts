@@ -15,6 +15,4 @@ export class ExampleComponent implements OnChanges {
   names: string[] = ['John', 'Doe', 'Jane', 'Doe'];
   name: string = 'John Doe';
   date : Date = new Date();
-
-
 }
